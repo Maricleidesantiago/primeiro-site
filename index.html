@@ -14,7 +14,7 @@
         <nav> <!--seção de navegação do site. -->
             <ul>
                 <li><a href="#sobre">sobre mim </a></li>
-                <li><a href="#projeto">projetos</a></li> 
+                <li><a href="#projeto">projetos</a></li>
                 <li><a href="#contato">contato</a></li>
                 <li><a href="https://Google.com.br" target="-blank">Google</a></li>
 
@@ -57,17 +57,86 @@
         </article>
 
     </section>
+    <section id="Habilidades">
+        <h2>Habilidades e Tecnologias</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
+
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediário</td>
+                    <td>Experiência com flexbox, grid e animações CSS.</td>
+
+                </tr>
+
+                <tr>
+                    <td>JAVASCRIPT</td>
+                    <td>Básico</td>
+                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
     <footer>
         <p>Direitos reservados a Maricleide</p>
         <section id="contato">
             <h2>Contato</h2>
 
-            <p>Tem um projeto em mente? Entre em contato</p>
-            <address>
-                E-mail: <a href="mailto:maricleide.santiago@yahoo.com">maricleide.santiago@yahoo.com</a> <br>
-                Telefone: <a href="47991404869">47991404869</a>
+            <p>Tem um projeto em mente? Entre em contato</p> <br>
 
-            </address>
+            <form action="">
+                <label for="nome">nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea><br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber mina newsletter? Fique por dentro.</label>
+
+                <br>
+                <input type="submit" value="Enviar mensagem">
+
+
+            </form>
+
         </section>
     </footer>
 
